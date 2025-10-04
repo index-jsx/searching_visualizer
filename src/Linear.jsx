@@ -86,8 +86,7 @@ export default function Linear() {
                 <div className="input-linear">
                     <input className="target-input" type="number" onChange={(e) => setInput(e)} placeholder="enter target value:" />
                     <input className=""
-                </div>
-                <br />
+               
                 <div>
                     <button className="linear-btn" onClick={linear_search}>
                         Start Searching
