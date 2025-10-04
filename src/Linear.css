@@ -1,0 +1,56 @@
+.linear-container {
+  text-align: center;
+  margin-top: 50px;
+}
+button.linear-btn {
+    padding: 13px 45px;
+    cursor: pointer;
+}
+.array-container {
+  display: flex; /* horizontal row */
+  justify-content: center;
+  gap: 15px; /* space between boxes */
+  margin: 20px 0;
+}
+
+.array-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: rgb(169 158 158);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.array-box.current {
+  background-color: yellow; /* element currently checking */
+}
+
+.array-box.found {
+  background-color: green; /* element found */
+  color: white;
+  border-color: darkgreen;
+}
+
+input {
+  padding: 5px;
+  margin-right: 10px;
+}
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.target-input {
+    width: 162px;
+    height: 22px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #85acd5;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}

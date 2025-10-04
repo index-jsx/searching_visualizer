@@ -1,0 +1,124 @@
+.Binary-cn {
+    padding-bottom: 410px;
+}
+
+button.binary-btn {
+    padding: 15px 60px;
+    cursor: pointer;
+    background-color: #030403;
+}
+
+input.binary-input {
+    width: 162px;
+    height: 22px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #85acd5;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.array-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.array-element {
+    width: 55px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #555;
+    font-weight: bold;
+    transition: all 1s ease;
+    background-color: rgb(247, 227, 227);
+    color: black;
+    border-radius: 5px;
+}
+
+
+.array-element.low {
+    background-color: #6e6d2d;
+    color: white;
+}
+
+
+.array-element.high {
+    background-color: #f74e4e;
+    color: white;
+}
+
+
+.array-element.mid {
+    background-color: #006d18;
+    color: white;
+}
+
+
+.array-element.skipped {
+    background-color: #c7d1d1;
+    color: #565b5c;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.low-color {
+    background-color: #6e6d2d;
+}
+
+.high-color {
+    background-color: #f74e4e;
+}
+
+.mid-color {
+    background-color: #006d18;
+}
+
+.new-arr {
+    padding: 15px 60px;
+    cursor: pointer;
+    background-color: #030403;
+}
+
+.array-btn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+input.linear-size {
+    width: 162px;
+    height: 22px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #85acd5;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.linear-input{
+    display: flex;
+    justify-content: space-evenly;
+}
