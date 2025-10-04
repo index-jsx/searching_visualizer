@@ -54,3 +54,81 @@ button {
     outline: none;
     transition: all 0.3s ease;
 }
+.input-linear{
+  display: flex;
+  justify-content: space-evenly;
+}
+.linear-btns{
+  display: flex;
+  justify-content: space-evenly;
+}
+button.new-arr{
+  padding: 13px 45px;
+}
+.linear-info {
+  width: 85%;
+  margin: 30px auto;
+  background-color: #e8f0ff; /* soft blue tone */
+  border-left: 6px solid #2563eb;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.linear-info h2 {
+  color: #1e40af;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.linear-info p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.linear-complexity {
+  margin-top: 25px;
+}
+
+.linear-complexity table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.linear-complexity th,
+.linear-complexity td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: center;
+}
+
+.linear-complexity th {
+  background-color: #2563eb;
+  color: white;
+}
+
+.linear-complexity td {
+  background-color: #f1f5f9;
+  color: #333;
+}
+
+.linear-code {
+  background-color: #1e293b;
+  color: #f8fafc;
+  text-align: left;
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+}
+
+.linear-code h3 {
+  color: #60a5fa;
+}
