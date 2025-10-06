@@ -150,6 +150,35 @@ button.new-arr {
   max-width: 1270px;
 }
 
+@media (max-width: 768px) {
+
+  .linear-cn,
+  .binary-cn {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .array-container {
+    gap: 3px;
+  }
+
+  .array-box {
+    width: 18px;
+    padding: 3px 0;
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .linear-btn,
+  .new-array {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 0.85rem;
+  }
+}
 
 .info-message {
   padding: 12px 20px;
@@ -161,4 +190,260 @@ button.new-arr {
   text-align: left;
   box-shadow: 0 3px 6px rgba(235, 226, 226, 0.1);
   transition: all 0.3s ease;
+}
+/* --------------------------- */
+/* Linear Search Responsive CSS */
+/* --------------------------- */
+
+/* Extra Small Devices (<360px) */
+@media (max-width: 359px) {
+  .linear-cn,
+  .binary-cn {
+    width: 95%;
+    padding: 0 5px;
+  }
+
+  .array-container {
+    gap: 2px;
+  }
+
+  .array-box {
+    width: 16px;
+    height: 16px;
+    font-size: 0.65rem;
+    padding: 2px 0;
+  }
+
+  .linear-btn,
+  .new-arr {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    margin: 5px 0;
+  }
+
+  .target-input {
+    width: 120px;
+    font-size: 0.8rem;
+  }
+
+  .linear-info {
+    width: 95%;
+    padding: 15px;
+    font-size: 0.8rem;
+  }
+
+  .linear-info h2 {
+    font-size: 1rem;
+  }
+
+  .linear-info p {
+    font-size: 0.75rem;
+  }
+
+  .linear-complexity th,
+  .linear-complexity td {
+    font-size: 0.65rem;
+    padding: 5px;
+  }
+}
+
+/* Small Phones (360px - 480px) */
+@media (min-width: 360px) and (max-width: 480px) {
+  .linear-cn,
+  .binary-cn {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .array-container {
+    gap: 3px;
+  }
+
+  .array-box {
+    width: 18px;
+    height: 18px;
+    font-size: 0.7rem;
+    padding: 3px 0;
+  }
+
+  .linear-btn,
+  .new-arr {
+    width: auto;
+    padding: 12px 25px;
+    font-size: 0.85rem;
+    margin: 5px 0;
+  }
+
+  .target-input {
+    width: 140px;
+  }
+
+  .linear-info {
+    width: 90%;
+    padding: 18px;
+    font-size: 0.85rem;
+  }
+
+  .linear-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .linear-info p {
+    font-size: 0.8rem;
+  }
+
+  .linear-complexity th,
+  .linear-complexity td {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
+}
+
+/* Medium Phones / Phablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .linear-cn,
+  .binary-cn {
+    width: 95%;
+    padding: 0 15px;
+  }
+
+  .array-container {
+    gap: 5px;
+  }
+
+  .array-box {
+    width: 25px;
+    height: 25px;
+    font-size: 0.85rem;
+    padding: 4px 0;
+  }
+
+  .linear-btn,
+  .new-arr {
+    padding: 13px 35px;
+    font-size: 0.9rem;
+  }
+
+  .target-input {
+    width: 150px;
+  }
+
+  .linear-info {
+    width: 90%;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  .linear-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .linear-info p {
+    font-size: 0.9rem;
+  }
+
+  .linear-complexity th,
+  .linear-complexity td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+}
+
+/* Tablets / Small Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .linear-cn,
+  .binary-cn {
+    width: 90%;
+    padding: 0 20px;
+  }
+
+  .array-container {
+    gap: 8px;
+  }
+
+  .array-box {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .linear-btn,
+  .new-arr {
+    padding: 14px 45px;
+    font-size: 1rem;
+  }
+
+  .target-input {
+    width: 160px;
+  }
+
+  .linear-info {
+    width: 85%;
+    padding: 25px;
+    font-size: 1rem;
+  }
+
+  .linear-info h2 {
+    font-size: 1.6rem;
+  }
+
+  .linear-info p {
+    font-size: 0.95rem;
+  }
+
+  .linear-complexity th,
+  .linear-complexity td {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+/* Large Screens (1025px+) */
+@media (min-width: 1025px) {
+  .linear-cn,
+  .binary-cn {
+    width: 85%;
+    padding: 0 30px;
+  }
+
+  .array-container {
+    gap: 15px;
+  }
+
+  .array-box {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .linear-btn,
+  .new-arr {
+    padding: 13px 45px;
+    font-size: 1rem;
+  }
+
+  .target-input {
+    width: 162px;
+  }
+
+  .linear-info {
+    width: 85%;
+    padding: 25px;
+    font-size: 1rem;
+  }
+
+  .linear-info h2 {
+    font-size: 28px;
+  }
+
+  .linear-info p {
+    font-size: 1rem;
+  }
+
+  .linear-complexity th,
+  .linear-complexity td {
+    font-size: 1rem;
+    padding: 10px;
+  }
 }

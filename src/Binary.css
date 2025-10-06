@@ -1,7 +1,6 @@
 .Binary-cn {
     padding-bottom: 410px;
 }
-
 button.binary-btn {
     padding: 15px 60px;
     cursor: pointer;
@@ -121,4 +120,238 @@ input.linear-size {
 .linear-input{
     display: flex;
     justify-content: space-evenly;
+}
+/* Extra Small Devices (<360px) */
+@media (max-width: 359px) {
+    .Binary-cn {
+        padding-bottom: 200px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: 1 1 100%;
+        padding: 12px 0;
+        font-size: 0.85rem;
+    }
+
+    .binary-input {
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .array-element {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .legend {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Small Phones (360px - 480px) */
+@media (min-width: 360px) and (max-width: 480px) {
+    .Binary-cn {
+        padding-bottom: 250px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: 1 1 45%;
+        font-size: 0.9rem;
+        padding: 12px 10px;
+    }
+
+    .binary-input {
+        width: 150px;
+    }
+
+    .array-element {
+        width: 45px;
+        height: 45px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Medium Phones / Phablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .Binary-cn {
+        padding-bottom: 300px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: 1 1 40%;
+        padding: 14px 25px;
+        font-size: 0.95rem;
+    }
+
+    .binary-input {
+        width: 160px;
+    }
+
+    .array-element {
+        width: 50px;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+}
+/* -------------------------- */
+/* Mobile Responsive Queries */
+/* -------------------------- */
+
+/* Extra Small Devices (<360px) */
+@media (max-width: 359px) {
+    .Binary-cn {
+        padding-bottom: 200px;
+    }
+
+    .array-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: none; /* prevent stretching */
+        width: auto;
+        padding: 10px 25px;
+        font-size: 0.85rem;
+    }
+
+    .binary-input {
+        width: 100%;
+        max-width: 140px;
+    }
+
+    .array-element {
+        width: 40px;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+
+    .legend {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Small Phones (360px - 480px) */
+@media (min-width: 360px) and (max-width: 480px) {
+    .Binary-cn {
+        padding-bottom: 250px;
+    }
+
+    .array-btn {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: none;
+        width: auto;
+        padding: 12px 30px;
+        font-size: 0.9rem;
+    }
+
+    .binary-input {
+        width: 150px;
+    }
+
+    .array-element {
+        width: 45px;
+        height: 45px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Medium Phones / Phablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .Binary-cn {
+        padding-bottom: 300px;
+    }
+
+    .array-btn {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: none;
+        width: auto;
+        padding: 14px 35px;
+        font-size: 0.95rem;
+    }
+
+    .binary-input {
+        width: 160px;
+    }
+
+    .array-element {
+        width: 50px;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Binary-cn {
+        padding-bottom: 350px;
+    }
+
+    .array-btn {
+        gap: 20px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: none;
+        width: auto;
+        padding: 15px 45px;
+        font-size: 1rem;
+    }
+
+    .binary-input {
+        width: 160px;
+    }
+
+    .array-element {
+        width: 55px;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
+
+/* Large Screens (1025px+) */
+@media (min-width: 1025px) {
+    .Binary-cn {
+        padding-bottom: 410px;
+    }
+
+    .array-btn {
+        gap: 20px;
+    }
+
+    .binary-btn,
+    .new-arr {
+        flex: none;
+        width: auto;
+        padding: 15px 60px;
+        font-size: 1rem;
+    }
+
+    .binary-input {
+        width: 162px;
+    }
+
+    .array-element {
+        width: 55px;
+        height: 50px;
+        font-size: 1rem;
+    }
 }

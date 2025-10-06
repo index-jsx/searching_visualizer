@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+
 }
 
 /* 📦 Front Page Container */
@@ -151,8 +152,4 @@ button:hover {
 }
 button.search-btn{
   padding: 18px 85px;
-}
-.sign{
-  display: flex;
-  justify-content: flex-end;
 }
