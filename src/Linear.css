@@ -191,14 +191,19 @@ button.new-arr {
   box-shadow: 0 3px 6px rgba(235, 226, 226, 0.1);
   transition: all 0.3s ease;
 }
+
+/* ------------------------ */
+/* 📱 Linear Search Responsive Media Queries */
+/* ------------------------ */
+
+
 /* ------------------------ */
 /* 📱 Linear Search Responsive Media Queries */
 /* ------------------------ */
 
 /* Extra Small Devices (<360px) */
 @media (max-width: 359px) {
-  .linear-cn,
-  .binary-cn {
+  .linear-cn {
     width: 95%;
     padding: 0 5px;
   }
@@ -212,7 +217,6 @@ button.new-arr {
   .array-box {
     width: 15px;
     height: 35px;
-    padding: 2px 0;
     font-size: 0.65rem;
   }
 
@@ -222,9 +226,9 @@ button.new-arr {
 
   .linear-btn,
   .new-arr {
-    width: 100%;
-    margin: 5px 0;
+    padding: 8px 20px;
     font-size: 0.8rem;
+    bottom: 10px;
   }
 
   .linear-info {
@@ -237,8 +241,8 @@ button.new-arr {
     padding: 10px;
   }
 
-  .linear-complexity table th,
-  .linear-complexity table td {
+  .linear-complexity th,
+  .linear-complexity td {
     padding: 5px;
     font-size: 0.7rem;
   }
@@ -246,8 +250,7 @@ button.new-arr {
 
 /* Small Phones (360px - 480px) */
 @media (min-width: 360px) and (max-width: 480px) {
-  .linear-cn,
-  .binary-cn {
+  .linear-cn {
     width: 95%;
     padding: 0 8px;
   }
@@ -260,7 +263,6 @@ button.new-arr {
   .array-box {
     width: 18px;
     height: 40px;
-    padding: 3px 0;
     font-size: 0.7rem;
   }
 
@@ -270,9 +272,9 @@ button.new-arr {
 
   .linear-btn,
   .new-arr {
-    width: 100%;
-    margin: 5px 0;
+    padding: 10px 25px;
     font-size: 0.85rem;
+    bottom: 12px;
   }
 
   .linear-info {
@@ -285,8 +287,8 @@ button.new-arr {
     padding: 12px;
   }
 
-  .linear-complexity table th,
-  .linear-complexity table td {
+  .linear-complexity th,
+  .linear-complexity td {
     padding: 7px;
     font-size: 0.75rem;
   }
@@ -294,8 +296,7 @@ button.new-arr {
 
 /* Medium Phones / Phablets (481px - 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
-  .linear-cn,
-  .binary-cn {
+  .linear-cn {
     width: 95%;
     padding: 0 10px;
   }
@@ -309,7 +310,6 @@ button.new-arr {
   .array-box {
     width: 25px;
     height: 45px;
-    padding: 3px 0;
     font-size: 0.8rem;
   }
 
@@ -319,9 +319,9 @@ button.new-arr {
 
   .linear-btn,
   .new-arr {
-    width: auto;
-    margin: 5px;
+    padding: 12px 35px;
     font-size: 0.9rem;
+    bottom: 15px;
   }
 
   .linear-info {
@@ -334,8 +334,8 @@ button.new-arr {
     padding: 15px;
   }
 
-  .linear-complexity table th,
-  .linear-complexity table td {
+  .linear-complexity th,
+  .linear-complexity td {
     padding: 8px;
     font-size: 0.85rem;
   }
@@ -343,8 +343,7 @@ button.new-arr {
 
 /* Tablets / Small Laptops (769px - 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-  .linear-cn,
-  .binary-cn {
+  .linear-cn {
     width: 95%;
     padding: 0 15px;
   }
@@ -356,7 +355,6 @@ button.new-arr {
   .array-box {
     width: 35px;
     height: 50px;
-    padding: 3px 0;
     font-size: 0.9rem;
   }
 
@@ -366,10 +364,9 @@ button.new-arr {
 
   .linear-btn,
   .new-arr {
-    width: auto;
-    margin: 5px;
-    padding: 12px 35px;
+    padding: 13px 40px;
     font-size: 1rem;
+    bottom: 18px;
   }
 
   .linear-info {
@@ -382,17 +379,16 @@ button.new-arr {
     padding: 15px;
   }
 
-  .linear-complexity table th,
-  .linear-complexity table td {
+  .linear-complexity th,
+  .linear-complexity td {
     padding: 10px;
     font-size: 0.9rem;
   }
 }
 
-/* Desktops / Large Screens (1025px+) */
+/* Large Screens (1025px+) */
 @media (min-width: 1025px) {
-  .linear-cn,
-  .binary-cn {
+  .linear-cn {
     width: 100%;
     padding: 0 20px;
   }
@@ -413,10 +409,9 @@ button.new-arr {
 
   .linear-btn,
   .new-arr {
-    width: auto;
-    margin: 5px;
     padding: 13px 45px;
     font-size: 1rem;
+    bottom: 20px;
   }
 
   .linear-info {
@@ -429,8 +424,8 @@ button.new-arr {
     padding: 15px;
   }
 
-  .linear-complexity table th,
-  .linear-complexity table td {
+  .linear-complexity th,
+  .linear-complexity td {
     padding: 10px;
     font-size: 1rem;
   }
