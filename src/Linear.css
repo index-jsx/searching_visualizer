@@ -2,14 +2,18 @@
   text-align: center;
   margin-top: 50px;
 }
+
 button.linear-btn {
-    padding: 13px 45px;
-    cursor: pointer;
+  padding: 13px 45px;
+  cursor: pointer;
 }
+
 .array-container {
-  display: flex; /* horizontal row */
+  display: flex;
+  /* horizontal row */
   justify-content: center;
-  gap: 15px; /* space between boxes */
+  gap: 15px;
+  /* space between boxes */
   margin: 20px 0;
 }
 
@@ -27,11 +31,13 @@ button.linear-btn {
 }
 
 .array-box.current {
-  background-color: yellow; /* element currently checking */
+  background-color: yellow;
+  /* element currently checking */
 }
 
 .array-box.found {
-  background-color: green; /* element found */
+  background-color: green;
+  /* element found */
   color: white;
   border-color: darkgreen;
 }
@@ -40,35 +46,42 @@ input {
   padding: 5px;
   margin-right: 10px;
 }
+
 button {
   padding: 5px 10px;
   cursor: pointer;
 }
+
 .target-input {
-    width: 162px;
-    height: 22px;
-    padding: 8px 12px;
-    font-size: 16px;
-    border: 2px solid #85acd5;
-    border-radius: 8px;
-    outline: none;
-    transition: all 0.3s ease;
+  width: 162px;
+  height: 22px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 2px solid #85acd5;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
 }
-.input-linear{
+
+.input-linear {
   display: flex;
   justify-content: space-evenly;
 }
-.linear-btns{
+
+.linear-btns {
   display: flex;
   justify-content: space-evenly;
 }
-button.new-arr{
+
+button.new-arr {
   padding: 13px 45px;
 }
+
 .linear-info {
   width: 85%;
   margin: 30px auto;
-  background-color: #e8f0ff; /* soft blue tone */
+  background-color: #e8f0ff;
+  /* soft blue tone */
   border-left: 6px solid #2563eb;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -131,4 +144,50 @@ button.new-arr{
 
 .linear-code h3 {
   color: #60a5fa;
+}
+
+.linear-cn {
+  max-width: 1270px;
+}
+
+@media (max-width: 768px) {
+
+  .linear-cn,
+  .binary-cn {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .array-container {
+    gap: 3px;
+  }
+
+  .array-box {
+    width: 18px;
+    padding: 3px 0;
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .linear-btn,
+  .new-array {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 0.85rem;
+  }
+}
+
+.info-message {
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  font-size: 0.95rem;
+  display: inline-block;
+  max-width: 90%;
+  text-align: left;
+  box-shadow: 0 3px 6px rgba(235, 226, 226, 0.1);
+  transition: all 0.3s ease;
 }

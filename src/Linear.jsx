@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./Linear.css";
-
+import { toast } from "react-toastify";
 export default function Linear() {
     const [array, setArray] = useState(Genarate_linear_array());
+    const [arrayctn, setArrayctn] = useState();
+    const [array_is_true, setArray_is_true] = useState(false);
     const [arraysize, setArraysize] = useState(null)
     const [target, setTarget] = useState(null);
     const [found, setFound] = useState(false);
@@ -14,20 +16,28 @@ export default function Linear() {
         setTarget(Number(event.target.value));
     }
     function Genarate_linear_array(size) {
-        const arr = Array.from({ length: size }, () => Math.floor(Math.random() * 99));
-        arr.sort((a, b) => a - b);
+        const arr = Array.from({ length: size }, () => Math.floor(Math.random() * 100));
         return arr;
     }
     function Arraysize(event) {
-        setArraysize(Number(event.target.value))
+        let check_size = event.target.value;
+        if (check_size <= 20) {
+            setArraysize(Number(event.target.value));
+        }
+        else {
+            setArray_is_true(true)
+            setArrayctn("array must be lessthan or equal to 20 ...❗❗");
+            setArraysize(0);
+            return;
+        }
     }
     function linear_search() {
         setCurrentIndex(-1);
         let founded_at = -1;
         let i = 0;
 
-        if (target == null) {
-            alert("❌ Enter the target value!");
+        if (target === null) {
+            toast.error('❌ Enter the target value!')
             setStatement("❌ Your target value is empty!");
             return;
         }
@@ -74,6 +84,7 @@ export default function Linear() {
                 </div>
 
                 {!found && <h2>{statement}</h2>}
+                {array_is_true && <h2> {arrayctn} </h2>}
 
                 <div className="array-container">
                     {array.map((num, index) => (
@@ -95,11 +106,16 @@ export default function Linear() {
                         placeholder="Enter target value:"
                     />
                     <input className="target-input" placeholder="enter the size of arr:" onChange={(e) => Arraysize(e)} />
+                    <br />
+                    
                 </div>
                 <br />
                 <div className="linear-btns">
                     <button className="linear-btn" onClick={linear_search}>Start Searching</button>
                     <button className='new-arr' onClick={() => setArray(Genarate_linear_array(arraysize))} > Generating new Array </button>
+                </div>
+                <div className="linear_code">
+                    <input/>
                 </div>
             </div>
         </>

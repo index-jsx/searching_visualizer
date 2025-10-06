@@ -6,6 +6,7 @@ import Searching from './Searching'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Linear from './Linear';
 import Binary from './Binary'
+import { ToastContainer } from 'react-toastify'
 const router=createBrowserRouter([
   {
     path:'/',
@@ -21,10 +22,10 @@ const router=createBrowserRouter([
   }
 ])
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
+    <ToastContainer position='top-center'/>
       <RouterProvider router={router}/>
     </>
   )

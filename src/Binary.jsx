@@ -1,3 +1,4 @@
+import { toast } from 'react-toastify';
 import './Binary.css'
 import { useState } from 'react';
 
@@ -15,8 +16,8 @@ export default function Binary() {
     const [block, setBlock] = useState(false);
     const [notfound, setNotfound] = useState(true);
     const [notfoundst, setNotfoundst] = useState("enter the value to found❗");
-    const [arr, setArr] = useState(Genarate_array());
-    const [arrsize, setArrsize] = useState();
+    const [arr, setArr] = useState(Genarate_array(null));
+    const [arrsize, setArrsize] = useState(null);
 
     function Genarate_array(size) {
         const arr = Array.from({ length: size }, () => Math.floor(Math.random() * 99));
@@ -26,8 +27,18 @@ export default function Binary() {
     function setrIn(event) {
         setTr(Number(event.target.value));
     }
-    function setSize(event){
-        setArrsize(Number(event.target.value))
+    function setSize(event) {
+        let check_binary_size = event.target.value;
+        if (check_binary_size <= 20) {
+            setArrsize(Number(event.target.value))
+            return;
+        }
+        else {
+            setArrsize(0);
+            toast.error("❌ array size must be Lessthan or equal to 20..❗❗");
+            return;
+        }
+
     }
     function Binary_Search() {
         setFounded(false);
@@ -41,7 +52,11 @@ export default function Binary() {
         if (tr == null) {
             setBlock(true);
             setBlockst("your input is empty..!⁉️");
-            alert("❌ enter the value in the input box..‼️")
+            toast.error("❌ enter the target value in the input box..‼️")
+            return;
+        }
+        else if (arrsize===null){
+            toast.error("enter the sizze of array..‼️");
             return;
         }
         const step = () => {
@@ -116,11 +131,12 @@ export default function Binary() {
                 </div>
                 <div className='linear-input'>
                     <input className="binary-input" placeholder="enter the target value" type='number' onChange={(e) => setrIn(e)} /> <br />
-                    <br /><input type='number' placeholder='enter array size:' className='linear-size' onChange={(e)=>setSize(e)}/>
+                    <br />
+                    <input type='number' placeholder='enter array size:' className='linear-size' onChange={(e) => setSize(e)} />
                 </div>
                 <div className='array-btn'>
                     <button className="binary-btn" onClick={Binary_Search}> Start Searching  </button>
-                    <button className='new-arr' onClick={() => setArr(Genarate_array(arrsize)) } > Generating new Array </button>
+                    <button className='new-arr' onClick={() => setArr(Genarate_array(arrsize))} > Generating new Array </button>
                 </div>
 
 
@@ -128,7 +144,7 @@ export default function Binary() {
                     <p className="legend-item"><span className="legend-color low-color"></span> Low</p>
                     <p className="legend-item"><span className="legend-color mid-color"></span> Mid</p>
                     <p className="legend-item"><span className="legend-color high-color"></span> High</p>
-                    
+
                 </div>
 
             </div>
