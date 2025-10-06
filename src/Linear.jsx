@@ -114,9 +114,6 @@ export default function Linear() {
                     <button className="linear-btn" onClick={linear_search}>Start Searching</button>
                     <button className='new-arr' onClick={() => setArray(Genarate_linear_array(arraysize))} > Generating new Array </button>
                 </div>
-                <div className="linear_code">
-                    <input/>
-                </div>
             </div>
         </>
     );
