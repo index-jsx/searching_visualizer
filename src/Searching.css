@@ -1,3 +1,4 @@
+/* Base Styles */
 .target-input {
   width: 160px;           
   height: 21px;           
@@ -18,15 +19,17 @@
   color: #999; 
   font-style: italic;
 }
-.buttons{
-    display: flex;
-    justify-content: space-evenly;
 
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
 }
+
 button.search-btn {
-    padding: 16px 60px;
-    cursor: pointer;
+  padding: 16px 60px;
+  cursor: pointer;
 }
+
 .frontpage-container {
   max-width: 750px;
   margin: 50px auto;
@@ -38,6 +41,7 @@ button.search-btn {
   background: linear-gradient(145deg, #1e293b, #0f1724);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
   position: relative;
+  max-height: 198vh;
 }
 
 .intro-container {
@@ -79,10 +83,11 @@ button.search-btn {
   position: absolute;
   bottom: 15px;
   right: 20px;
-  font-style:normal;
+  font-style: normal;
   font-size: 0.95em;
   color: #a1a1aa;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid #aaa;            
@@ -105,22 +110,165 @@ button:hover {
 
 button:active {
   transform: scale(0.97);
-  background-color: #1a1a1a;          
-  border-color: #aaa;                  
+  background-color: #1a1a1a;
+  border-color: #aaa;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8),
-              0 0 6px rgba(255, 255, 255, 0.05); 
+              0 0 6px rgba(255, 255, 255, 0.05);
 }
 
 button:focus {
-  outline: none;                      
+  outline: none;
 }
 
 .helper-text {
-  font-size: 1em;               
-  font-weight: 400;             
-  font-style: normal;          
-  color: #e5e7eb;             
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  color: #e5e7eb;
   margin-bottom: 12px;
-  line-height: 1.6;            
-  letter-spacing: 0.2px;       
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+}
+
+.sign {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Array visualization classes */
+.array-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.array-box {
+  width: 20px;
+  padding: 4px 0;
+  background-color: #2563eb;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, portrait) */
+@media (max-width: 480px) {
+  .frontpage-container {
+    margin: 20px;
+    padding: 20px;
+    max-height: 222vh;
+  }
+
+  .intro-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .intro-container p {
+    font-size: 0.95rem;
+  }
+
+  .target-input {
+    width: 120px;
+    height: 20px;
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 0.85rem;
+  }
+
+  .array-box {
+    width: 16px;
+    padding: 2px 0;
+    font-size: 0.65rem;
+  }
+}
+
+/* Small devices (phones landscape / small tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .frontpage-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .intro-container h1 {
+    font-size: 1.6rem;
+  }
+
+  .target-input {
+    width: 140px;
+    height: 20px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.6em 1.2em;
+  }
+
+  .array-box {
+    width: 18px;
+    font-size: 0.7rem;
+  }
+}
+
+/* Medium devices (laptops/desktops) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .frontpage-container {
+    max-width: 700px;
+  }
+
+  .intro-container h1 {
+    font-size: 2rem;
+  }
+
+  .target-input {
+    width: 150px;
+    height: 21px;
+  }
+
+  button {
+    padding: 0.7em 1.4em;
+    font-size: 1rem;
+  }
+
+  .array-box {
+    width: 20px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Large devices (large desktops, 4k screens) */
+@media (min-width: 1201px) {
+  .frontpage-container {
+    max-width: 900px;
+    padding: 40px;
+  }
+
+  .intro-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .target-input {
+    width: 180px;
+    height: 24px;
+    font-size: 18px;
+  }
+
+  button {
+    padding: 1em 2em;
+    font-size: 1.1rem;
+  }
+
+  .array-box {
+    width: 22px;
+    padding: 4px 0;
+    font-size: 0.85rem;
+  }
 }

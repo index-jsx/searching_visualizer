@@ -150,35 +150,6 @@ button.new-arr {
   max-width: 1270px;
 }
 
-@media (max-width: 768px) {
-
-  .linear-cn,
-  .binary-cn {
-    width: 95%;
-    padding: 0 10px;
-  }
-
-  .array-container {
-    gap: 3px;
-  }
-
-  .array-box {
-    width: 18px;
-    padding: 3px 0;
-    font-size: 0.7rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .linear-btn,
-  .new-array {
-    width: 100%;
-    margin: 5px 0;
-    font-size: 0.85rem;
-  }
-}
 
 .info-message {
   padding: 12px 20px;

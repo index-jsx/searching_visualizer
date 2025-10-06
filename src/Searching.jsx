@@ -44,9 +44,12 @@ export default function Searching() {
                         </p>
                         <button onClick={() => navigate('/binary')} className="search-btn"> Binary Search </button>
                     </div>
-
-                    <p className="signature"> <br />created By -- Mervin F</p>
+                    <br />
+                    <div className='sign'>
+                        <h5> created By -- Mervin F </h5>
+                    </div>
                 </div>
+
             </div>
 
         </>
