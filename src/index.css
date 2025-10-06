@@ -74,5 +74,21 @@ button:focus-visible {
     text-align: center;
     height: 89vh;
 }
+@media (max-width: 768px) {
+    .linear-btn,
+    .binary-btn,
+    .new-arr {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
 
+    .linear-btn {
+        bottom: 60px;
+    }
 
+    .binary-btn {
+        bottom: 110px;
+    }
+}

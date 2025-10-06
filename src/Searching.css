@@ -5,6 +5,11 @@
   align-items: center;
   min-height: 100vh;
 
+  
+}
+.sign{
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* 📦 Front Page Container */
