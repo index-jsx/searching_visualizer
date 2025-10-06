@@ -144,7 +144,6 @@ export default function Binary() {
                     <p className="legend-item"><span className="legend-color low-color"></span> Low</p>
                     <p className="legend-item"><span className="legend-color mid-color"></span> Mid</p>
                     <p className="legend-item"><span className="legend-color high-color"></span> High</p>
-
                 </div>
 
             </div>

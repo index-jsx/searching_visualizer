@@ -5,8 +5,6 @@ export default function Searching() {
     return (
         <>
             <div className="parent">
-
-
                 <div className="frontpage-container">
                     <div className="intro">
                         <h1>Welcome to Searching Visualizer</h1>
@@ -38,7 +36,7 @@ export default function Searching() {
                         <p>
                             Binary Search is faster and smarter. It works on sorted data and cuts the search space in half with every step.
                             This makes it extremely efficient — a perfect example of the power of logic and optimization.
-                        </p> <br />
+                        </p>
                         <p className="helper-text">
                             Click the button below to see Binary Search in action.
                         </p>

@@ -1,274 +1,158 @@
-/* Base Styles */
-.target-input {
-  width: 160px;           
-  height: 21px;           
-  padding: 8px 12px;    
-  font-size: 16px;        
-  border: 2px solid #85acd5; 
-  border-radius: 8px;    
-  outline: none;          
-  transition: all 0.3s ease;
-}
-
-.target-input:focus {
-  border-color: #c9e3ff; 
-  box-shadow: 0 0 8px rgba(0,123,255,0.4);
-}
-
-.target-input::placeholder {
-  color: #999; 
-  font-style: italic;
-}
-
-.buttons {
+/* 🌙 Main Container */
+.parent {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-button.search-btn {
-  padding: 16px 60px;
-  cursor: pointer;
-}
-
+/* 📦 Front Page Container */
 .frontpage-container {
-  max-width: 750px;
-  margin: 50px auto;
-  font-family: Arial, sans-serif;
-  line-height: 1.7;
-  color: #f1f5f9;
-  padding: 30px;
+  width: 60%;
+  background: linear-gradient(145deg, #0b132b, #1c2541);
   border-radius: 15px;
-  background: linear-gradient(145deg, #1e293b, #0f1724);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-  position: relative;
-  max-height: 198vh;
-}
-
-.intro-container {
+  padding: 40px;
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   text-align: center;
-  margin-bottom: 30px;
 }
 
-.intro-container h1 {
-  font-size: 2.2em;
-  margin-bottom: 10px;
+/* 🧠 Text Styling */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
-.intro-container p {
-  font-size: 1.1em;
-}
-
-.section {
+h2 {
+  font-size: 1.4rem;
   margin-top: 25px;
 }
 
-.section h2 {
-  font-size: 1.4em;
-  margin-bottom: 8px;
+.linear-title {
+  color: #5aa9e6;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
-.section h2.linear {
-  color: #60a5fa;
+.binary-title {
+  color: #f6b93b;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
-.section h2.binary {
-  color: #f59e0b;
+p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
-.section p {
-  font-size: 1.05em;
-}
-
-.signature {
-  position: absolute;
-  bottom: 15px;
-  right: 20px;
-  font-style: normal;
-  font-size: 0.95em;
-  color: #a1a1aa;
-}
-
+/* 🔘 Button Styling */
 button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #888;
   border-radius: 8px;
-  border: 1px solid #aaa;            
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;          
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8),  
-              0 0 6px rgba(255, 255, 255, 0.05); 
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 0.3s;
 }
 
 button:hover {
-  background-color: #141010;        
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.85),
-              0 0 8px rgba(27, 0, 0, 0.08);
+  background-color: #222;
 }
 
-button:active {
-  transform: scale(0.97);
-  background-color: #1a1a1a;
-  border-color: #aaa;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8),
-              0 0 6px rgba(255, 255, 255, 0.05);
+/* 🧾 Credit */
+.credit {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
-button:focus {
-  outline: none;
-}
+/* ✨ Responsive for All Devices */
 
-.helper-text {
-  font-size: 1em;
-  font-weight: 400;
-  font-style: normal;
-  color: #e5e7eb;
-  margin-bottom: 12px;
-  line-height: 1.6;
-  letter-spacing: 0.2px;
-}
-
-.sign {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* Array visualization classes */
-.array-container {
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-
-.array-box {
-  width: 20px;
-  padding: 4px 0;
-  background-color: #2563eb;
-  color: #fff;
-  text-align: center;
-  border-radius: 4px;
-  font-weight: bold;
-}
-
-/* Media Queries */
-
-/* Extra small devices (phones, portrait) */
-@media (max-width: 480px) {
+/* 🖥️ Large Laptops */
+@media (max-width: 1200px) {
   .frontpage-container {
-    margin: 20px;
-    padding: 20px;
-    max-height: 222vh;
+    width: 75%;
+    padding: 35px;
+  }
+}
+
+/* 💻 Tablets */
+@media (max-width: 992px) {
+  .frontpage-container {
+    width: 80%;
+    padding: 30px;
   }
 
-  .intro-container h1 {
-    font-size: 1.3rem;
+  h1 {
+    font-size: 1.8rem;
   }
 
-  .intro-container p {
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* 📱 Mobiles */
+@media (max-width: 768px) {
+  .frontpage-container {
+    width: 90%;
+    padding: 25px;
+    margin: 20px 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  p {
     font-size: 0.95rem;
   }
 
-  .target-input {
-    width: 120px;
-    height: 20px;
-    font-size: 14px;
-    padding: 6px 10px;
-  }
-
-  button {
-    padding: 0.5em 1em;
-    font-size: 0.85rem;
-  }
-
-  .array-box {
-    width: 16px;
-    padding: 2px 0;
-    font-size: 0.65rem;
+  .intro {
+    margin-bottom: 20px;
   }
 }
 
-/* Small devices (phones landscape / small tablets) */
-@media (min-width: 481px) and (max-width: 768px) {
+/* 📱 Small Mobiles */
+@media (max-width: 576px) {
   .frontpage-container {
-    max-width: 90%;
-    padding: 25px;
+    width: 95%;
+    padding: 20px;
+    margin: 15px 0;
   }
 
-  .intro-container h1 {
-    font-size: 1.6rem;
+  h1 {
+    font-size: 1.3rem;
   }
 
-  .target-input {
-    width: 140px;
-    height: 20px;
-  }
-
-  button {
+  p {
     font-size: 0.9rem;
-    padding: 0.6em 1.2em;
-  }
-
-  .array-box {
-    width: 18px;
-    font-size: 0.7rem;
   }
 }
 
-/* Medium devices (laptops/desktops) */
-@media (min-width: 769px) and (max-width: 1200px) {
+/* 📱 Extra Small Devices */
+@media (max-width: 400px) {
   .frontpage-container {
-    max-width: 700px;
+    width: 98%;
+    padding: 15px;
   }
 
-  .intro-container h1 {
-    font-size: 2rem;
+  h1 {
+    font-size: 1.2rem;
   }
 
-  .target-input {
-    width: 150px;
-    height: 21px;
-  }
-
-  button {
-    padding: 0.7em 1.4em;
-    font-size: 1rem;
-  }
-
-  .array-box {
-    width: 20px;
-    font-size: 0.8rem;
-  }
-}
-
-/* Large devices (large desktops, 4k screens) */
-@media (min-width: 1201px) {
-  .frontpage-container {
-    max-width: 900px;
-    padding: 40px;
-  }
-
-  .intro-container h1 {
-    font-size: 2.5rem;
-  }
-
-  .target-input {
-    width: 180px;
-    height: 24px;
-    font-size: 18px;
-  }
-
-  button {
-    padding: 1em 2em;
-    font-size: 1.1rem;
-  }
-
-  .array-box {
-    width: 22px;
-    padding: 4px 0;
+  p {
     font-size: 0.85rem;
   }
+}
+button.search-btn{
+  padding: 18px 85px;
+}
+.sign{
+  display: flex;
+  justify-content: flex-end;
 }
