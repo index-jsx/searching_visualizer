@@ -77,7 +77,7 @@ export default function Linear() {
 
     return (
         <>
-            <div className="linear-cn">
+            <div className="binary-cn">
                 <div className="Main-ctn">
                     <h1>Linear Search Visualizer</h1>
                     <br />
