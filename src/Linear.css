@@ -63,10 +63,6 @@ button {
   transition: all 0.3s ease;
 }
 
-.input-linear {
-  display: flex;
-  justify-content: space-evenly;
-}
 
 .linear-btns {
   display: flex;
@@ -76,7 +72,6 @@ button {
 button.new-arr {
   padding: 13px 45px;
 }
-
 .linear-info {
   width: 85%;
   margin: 30px auto;
@@ -164,7 +159,7 @@ button.new-arr {
 
   .array-box {
     width: 18px;
-    padding: 3px 0;
+    padding: 4px 15px;
     font-size: 0.7rem;
   }
 
@@ -175,7 +170,7 @@ button.new-arr {
   .linear-btn,
   .new-array {
     width: 201%;
-    margin: 10px 21px;
+    margin: 10px ;
     font-size: 0.85rem;
   }
 }
