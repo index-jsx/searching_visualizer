@@ -17,6 +17,12 @@ button.linear-btn {
   margin: 20px 0;
 }
 
+button.linear-back-btn {
+  padding: 11px 54px;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .array-box {
   width: 50px;
   height: 50px;
@@ -72,6 +78,7 @@ button {
 button.new-arr {
   padding: 13px 45px;
 }
+
 .linear-info {
   width: 85%;
   margin: 30px auto;
@@ -170,7 +177,7 @@ button.new-arr {
   .linear-btn,
   .new-array {
     width: 201%;
-    margin: 10px ;
+    margin: 10px;
     font-size: 0.85rem;
   }
 }

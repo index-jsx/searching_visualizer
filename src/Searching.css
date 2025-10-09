@@ -11,8 +11,6 @@
   display: flex;
   justify-content: flex-end;
 }
-
-/* 📦 Front Page Container */
 .frontpage-container {
   width: 60%;
   background: linear-gradient(145deg, #0b132b, #1c2541);

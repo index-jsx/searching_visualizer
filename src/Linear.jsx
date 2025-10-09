@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Linear.css";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
+import Complexity from "./Complexity";
 export default function Linear() {
     const [array, setArray] = useState(Genarate_linear_array());
     const [arrayctn, setArrayctn] = useState();
@@ -11,6 +13,8 @@ export default function Linear() {
     const [indexfound, setIndexfound] = useState(-1);
     const [currentIndex, setCurrentIndex] = useState(-1);
     const [statement, setStatement] = useState("Click the Button to Search a target Element...!!");
+
+    const linear_navigate = useNavigate();
 
     function setInput(event) {
         setTarget(Number(event.target.value));
@@ -78,11 +82,11 @@ export default function Linear() {
     return (
         <>
             <div className="binary-cn">
+                <button className="linear-back-btn" onClick={()=>linear_navigate('/')}>  Back </button>
                 <div className="Main-ctn">
                     <h1>Linear Search Visualizer</h1>
                     <br />
                 </div>
-
                 {!found && <h2>{statement}</h2>}
                 {array_is_true && <h2> {arrayctn} </h2>}
 
@@ -105,7 +109,7 @@ export default function Linear() {
                         onChange={(e) => setInput(e)}
                         placeholder="Enter target value:"
                     />
-                    <input className="target-input" placeholder="enter the size of arr:" onChange={(e) => Arraysize(e)} />
+                    <input className="target-input" placeholder="enter the size of arr:" onChange={(e) => Arraysize(e)}  type="number"/>
                     <br />
                     
                 </div>
@@ -113,6 +117,9 @@ export default function Linear() {
                 <div className="linear-btns">
                     <button className="linear-btn" onClick={linear_search}>Start Searching</button>
                     <button className='new-arr' onClick={() => setArray(Genarate_linear_array(arraysize))} > Generating new Array </button>
+                </div>
+                <div>
+                    <Complexity algorithm="Linear_Search"/>
                 </div>
             </div>
         </>

@@ -18,7 +18,11 @@ input.binary-input {
     outline: none;
     transition: all 0.3s ease;
 }
-
+button.binary-back-btn{
+    padding: 11px 54px;
+    display: flex;
+    justify-content: flex-start;
+}
 .array-container {
     display: flex;
     justify-content: center;

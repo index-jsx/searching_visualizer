@@ -1,0 +1,64 @@
+.complexity-table-container {
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #f5f5f5;
+}
+
+.complexity-table-container h3 {
+  color: #ff66cc; /* pink title */
+  font-size: 22px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.complexity-table {
+  display: flex;
+  justify-content: center;
+}
+
+.complexity-table table {
+  width: 320px;
+  border-collapse: collapse;
+  background-color: #12121a;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.complexity-table th {
+  background: linear-gradient(90deg, #8a2be2, #ff66cc); /* purple to pink */
+  color: #fff;
+  padding: 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.complexity-table td {
+  padding: 12px;
+  font-size: 15px;
+  color: #eaeaea;
+  border-top: 1px solid #2e2e3d;
+}
+
+.complexity-table tr:nth-child(even) td {
+  background-color: #1f1f2f; /* alternate row shading */
+}
+
+.complexity-table tr:hover td {
+  background-color: #2a2a3d;
+  color: #ff66cc;
+  transition: 0.3s ease;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .complexity-table table {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .complexity-table-container h3 {
+    font-size: 18px;
+  }
+}
