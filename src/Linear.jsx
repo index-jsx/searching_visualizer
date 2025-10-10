@@ -3,6 +3,7 @@ import "./Linear.css";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import Complexity from "./Complexity";
+import LinearCode from "./linearCode";
 export default function Linear() {
     const [array, setArray] = useState(Genarate_linear_array());
     const [arrayctn, setArrayctn] = useState();
@@ -120,6 +121,9 @@ export default function Linear() {
                 </div>
                 <div>
                     <Complexity algorithm="Linear_Search"/>
+                </div>
+                <div>
+                    <LinearCode/>
                 </div>
             </div>
         </>

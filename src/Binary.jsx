@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import Searching from './Searching';
 import Complexity from './Complexity';
 import Linear from './Linear';
+import BinaryCode from './BinaryCode';
 
 export default function Binary() {
     const Binary_navigate = useNavigate();
@@ -154,6 +155,9 @@ export default function Binary() {
                 </div>
                 <div>
                     <Complexity algorithm="Binary_Search"/>
+                </div>
+                <div>
+                    <BinaryCode/>
                 </div>
 
             </div>
