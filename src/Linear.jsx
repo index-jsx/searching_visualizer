@@ -3,7 +3,7 @@ import "./Linear.css";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import Complexity from "./Complexity";
-import LinearCode from "./LinearCode.jsx";
+import LinearCode from "./linearCode.jsx";
 
 export default function Linear() {
     const [array, setArray] = useState(Genarate_linear_array());

@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Complexity.css";
 export default function Complexity({ algorithm }) {
     let time = "";
