@@ -9,7 +9,7 @@ export default function Complexity({ algorithm }) {
 
     }
     else if (algorithm === "Binary_Search") {
-        time = "O(n log n)";
+        time = "O(log n)";
         space = "O(1)";
     }
     return (
