@@ -154,10 +154,10 @@ export default function Binary() {
 
                 </div>
                 <div>
-                    <Complexity algorithm="Binary_Search"/>
+                     <BinaryCode/>
                 </div>
                 <div>
-                    <BinaryCode/>
+                   <Complexity algorithm="Binary_Search"/>
                 </div>
 
             </div>

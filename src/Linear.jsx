@@ -121,10 +121,10 @@ export default function Linear() {
                     <button className='new-arr' onClick={() => setArray(Genarate_linear_array(arraysize))} > Generating new Array </button>
                 </div>
                 <div>
-                    <Complexity algorithm="Linear_Search"/>
+                     <LinearCode/>
                 </div>
                 <div>
-                    <LinearCode/>
+                   <Complexity algorithm="Linear_Search"/>
                 </div>
             </div>
         </>
